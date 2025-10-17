@@ -11,7 +11,7 @@
 1. Clone repo
 
 ```bash
-git clone https://github.com/raflyrzp/personal-expense-tracker<.git
+git clone https://github.com/raflyrzp/personal-expense-tracker.git
 cd personal-expense-tracker
 ```
 
