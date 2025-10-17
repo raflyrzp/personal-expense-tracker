@@ -1,12 +1,12 @@
 # Personal Expense Tracker
 
-## Prasyarat
+## Spesifikasi
 
 - PHP 8.2+ & Composer
 - Node.js 18+
 - Git
 
-## Instalasi Cepat
+## Instalasi
 
 1. Clone repo
 
@@ -39,16 +39,24 @@ pnpm run dev
 
 ## Penggunaan
 
-- Buka http://localhost:5173
-- Tambah beberapa expense (Create)
-- Lihat semua, filter kategori, edit, dan hapus
-- Total otomatis mengikuti filter
+- Create
 
-## Endpoints API
+  1. Klik tombol "Create" di navbar.
+  2. Isi form:
+     - Amount: angka positif (mis. 25.50)
+     - Description: teks singkat (mis. Lunch at cafe)
+     - Category: pilih salah satu (Food, Transport, Shopping, Other)
+  3. Klik tombol "Add".
+  4. Setelah berhasil, Anda akan kembali ke halaman Index dan pesan sukses muncul. Item baru tampil di tabel, dan Total bertambah.
 
-- GET /api/expenses
-- GET /api/expenses?category=Food
-- GET /api/expenses/:id
-- POST /api/expenses
-- PUT /api/expenses/:id
-- DELETE /api/expenses/:id
+- Edit
+
+  1. Di halaman Index, cari item yang ingin diubah dan klik tombol "Edit" pada baris tersebut.
+  2. Ubah nilai Amount, Description, atau Category sesuai kebutuhan.
+  3. Klik tombol "Update".
+  4. Setelah berhasil, Anda akan kembali ke halaman Index dengan pesan sukses. Data di tabel dan Total akan terbarui.
+
+- Delete
+  1. Di halaman Index, klik tombol "Delete" pada baris item yang ingin dihapus.
+  2. Item akan dihapus dari daftar.
+  3. Pesan sukses akan muncul dan Total akan berkurang sesuai jumlah yang dihapus.
